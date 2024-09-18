@@ -40,5 +40,5 @@ function getAverage(scores) {
     }
   }
 console.log(getGrade(100));
-console.log(getGrade(93));
+console.log(getGrade(83));
 console.log(getGrade(87));
