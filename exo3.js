@@ -9,19 +9,6 @@ Tips
 
 Use the getGrade function to get the student's grade. Then check if the grade is passing or not.*/ 
 
-
-
-
-
-function getAverage(scores) {
-    let sum = 0;
-  
-    for (const score of scores) {
-      sum += score;
-    }
-  
-    return sum / scores.length;
-  }
   
   function getGrade(score) {
     if (score === 100) {
@@ -39,7 +26,7 @@ function getAverage(scores) {
     }
   }
 
-  
+
 function hasPassingGrade(score) {
     if (getGrade(score) !== "F"){
       return true;
