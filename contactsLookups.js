@@ -52,5 +52,19 @@ const contacts = [
   
   console.log(lookUpProfile("Kristian", "lastName"));
   
+  //OR  USING TERNARY OPERATIONS 
+
+  function lookUpProfile(name, prop) {
+    // Only change code below this line
+    for (let i =0; i < contacts.length; i++){
+      if(contacts[i].firstName === name){
+        return contacts[i].hasOwnProperty(prop)? contacts[i][prop]:"No such property"
+        }
+   
+  }
+  return "No such contact";
+    // Only change code above this line
+  }
   
+  console.log(lookUpProfile("Kristian", "lastName"));
   
